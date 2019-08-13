@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    const api = getBaseUrl() + "api/";
+    const api = getBaseUrl() + "NpvCalculator/api/";
     const apiUrlCalculate = api + "Calculate";
 
     $("#btnAdd").on("click", function () {
