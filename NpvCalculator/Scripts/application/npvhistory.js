@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    const apiGetHistoryChart = getBaseUrl() + "api/GetNpvHistoryByID"
+    const apiGetHistoryChart = getBaseUrl() + "NpvCalculator/api/GetNpvHistoryByID"
     const pagingUrl = getBaseUrl() + "History/GridPager";
     $('.grid-mvc').gridmvc().ajaxify({
         getData: pagingUrl,
