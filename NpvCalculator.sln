@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpvCalculator", "NpvCalculator\NpvCalculator.csproj", "{6A694BDA-C060-45FA-B5D7-DA2C7266704D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpvCalculator.Tests", "NpvCalculator.Tests\NpvCalculator.Tests.csproj", "{5BD6025E-64A2-4A0D-8A41-2E5EB67227B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A694BDA-C060-45FA-B5D7-DA2C7266704D} = {6A694BDA-C060-45FA-B5D7-DA2C7266704D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A694BDA-C060-45FA-B5D7-DA2C7266704D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A694BDA-C060-45FA-B5D7-DA2C7266704D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A694BDA-C060-45FA-B5D7-DA2C7266704D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A694BDA-C060-45FA-B5D7-DA2C7266704D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BD6025E-64A2-4A0D-8A41-2E5EB67227B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD6025E-64A2-4A0D-8A41-2E5EB67227B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD6025E-64A2-4A0D-8A41-2E5EB67227B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD6025E-64A2-4A0D-8A41-2E5EB67227B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7B285F3-4C42-456F-9565-18AF90F6F9B4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,31 @@
+﻿@model List<NpvCalculator.Models.NpvModel>
+@{
+    ViewBag.Title = "NPV History";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/gridmvc")
+    @Scripts.Render("~/bundles/charts")
+    @Scripts.Render("~/bundles/npvhistory")
+}
+
+<div class="container">
+    @Html.Action("GetGrid")
+</div>
+<div id="chartView" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header btn-info">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Npv Chart</h4>
+            </div>
+            <div class="modal-body">
+                <canvas id="npvHistoryCanvas" style="display: none"></canvas>
+            </div>
+            <div class="modal-footer">
+                <button id="btnOk" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

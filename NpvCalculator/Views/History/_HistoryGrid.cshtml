@@ -1,0 +1,12 @@
+﻿@using GridMvc.Html
+@model Grid.Mvc.Ajax.GridExtensions.AjaxGrid<NpvCalculator.Models.NpvModel>
+
+@Html.Grid(Model).Named("NpvHistoryGrid").Columns(Columns => {
+    Columns.Add(item => item.CalculationID).Titled("ID");
+    Columns.Add(item => item.LowerBoundDiscountRate).Titled("Lower Bound Discount Rate");
+    Columns.Add(item => item.UpperBoundDiscountRate).Titled("Upper Bound Discount Rate");
+    Columns.Add(item => item.DiscountRateIncrement).Titled("Discount Rate Increment");
+    Columns.Add(item => item.InitialInvestment).Titled("Initial Investment");
+    Columns.Add().Encoded(false).Sanitized(false).SetWidth(30)
+        .RenderValueAs(item => "<button id=\"btnViewChart_" + item.CalculationID+ "\" type=\"button\" class=\"btn btn-primary\" data-id=\"" + item.CalculationID + "\">View Chart</button>");
+}).WithPaging(10).Sortable(false).WithMultipleFilters().Selectable(false)
